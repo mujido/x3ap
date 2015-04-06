@@ -1,0 +1,190 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>a.fix.CompClean</name>
+<version>1</version>
+<engineversion>53</engineversion>
+<description>Fix the ordering and factories typs in Complex Cleaner Config (v3.09)</description>
+<arguments>
+</arguments>
+<sourceplaintext>
+<![CDATA[
+  $Stationdummy.Type = array alloc: size=10
+  $Stationdummy.Type[0] = Xenon Placeholder
+  $Stationdummy.Type[1] = Xenon Factory Module   2 M
+  $Stationdummy.Type[2] = Xenon Factory Module   5 L
+  $Stationdummy.Type[3] = Xenon Factory Module  10 XL
+  $Stationdummy.Type[4] = Xenon Factory Module  20 XXL
+  $Stationdummy.Type[5] = Xenon Factory Module  40 X XXL
+  $Stationdummy.Type[6] = Xenon Factory Module  50 X XXL
+  $Stationdummy.Type[7] = Xenon Factory Module 100 XX XXL
+  $Stationdummy.Type[8] = Xenon Factory Module 150 XXX XXL
+  $Stationdummy.Type[9] = Xenon Factory Module 200 XXXX XXL
+  $CClean.Config = get global variable: name='GZ.CCLEAN.CONFIG'
+  $CClean.Config[4] = $Stationdummy.Type
+  set global variable: name='GZ.CCLEAN.CONFIG' value=$CClean.Config
+  return null
+]]>
+</sourceplaintext>
+<sourcetext>
+<line indent=""><var>$Stationdummy.Type&#160;=&#160;</var><text>array&#160;alloc:&#160;size=</text><var>10</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>0</var><text>]&#160;=&#160;</text><var>Xenon&#160;Placeholder</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>1</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;&#160;2&#160;M</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>2</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;&#160;5&#160;L</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>3</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;10&#160;XL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>4</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;20&#160;XXL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>5</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;40&#160;X&#160;XXL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>6</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;&#160;50&#160;X&#160;XXL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>7</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;100&#160;XX&#160;XXL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>8</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;150&#160;XXX&#160;XXL</var></line>
+<line indent=""><var>$Stationdummy.Type</var><text>[</text><var>9</var><text>]&#160;=&#160;</text><var>Xenon&#160;Factory&#160;Module&#160;200&#160;XXXX&#160;XXL</var></line>
+<line indent=""><var>$CClean.Config&#160;=&#160;</var><text>get&#160;global&#160;variable:&#160;name=</text><var>'GZ.CCLEAN.CONFIG'</var></line>
+<line indent=""><var>$CClean.Config</var><text>[</text><var>4</var><text>]&#160;=&#160;</text><var>$Stationdummy.Type</var></line>
+<line indent=""><text>set&#160;global&#160;variable:&#160;name=</text><var>'GZ.CCLEAN.CONFIG'</var><text>&#160;value=</text><var>$CClean.Config</var></line>
+<line indent=""><text>return&#160;</text><var>null</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="a.fix.CompClean"/>
+  <sval type="int" val="53"/>
+  <sval type="string" val="Fix the ordering and factories typs in Complex Cleaner Config (v3.09)"/>
+  <sval type="int" val="1"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="2">
+    <sval type="string" val="Stationdummy.Type"/>
+    <sval type="string" val="CClean.Config"/>
+  </sval>
+  <sval type="array" size="15">
+    <sval type="array" size="4">
+      <sval type="int" val="128"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393681"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393671"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393672"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393673"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393674"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393675"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="6"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393676"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="7"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393677"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="8"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393678"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393679"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="158"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="GZ.CCLEAN.CONFIG"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="157"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="GZ.CCLEAN.CONFIG"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+  <sval type="int" val="0"/>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+<nosignature>8841</nosignature>
+</script>
